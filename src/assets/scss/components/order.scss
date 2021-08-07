@@ -1,0 +1,80 @@
+@import "../utils/parameters";
+
+//Order
+
+.order {
+	padding: 100px 0px;
+
+	&__row {
+		margin: 0px -15px;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+}
+
+.item {
+	padding: 0px 15px;
+	width: 33.33333%;
+
+	&__img {
+		margin: 0px 0px 32px 0px;
+	}
+
+	&__title {
+		margin: 0px 0px 13px 0px;
+		letter-spacing: 0.2px;
+		font-size: 2.5rem;
+		color: $c-text;
+	}
+
+	&__text {
+		max-width: 300px;
+		color: $c-text2;
+		font-weight: 400;
+		font-size: 1.6rem;
+		line-height: 150%;
+	}
+}
+
+//Media
+
+@media (max-width: $sm) {
+
+
+	.order {
+		padding: 60px 0px 30px 0px;
+
+	}
+	.item {
+		width: 50%;
+		&:last-child {
+			margin: 30px 0px 0px 0px;
+		}
+
+		&__title {
+			font-size: 2rem;
+		}
+
+		&__text {
+			font-size: 1.5rem;
+		}
+	}
+}
+
+@media (max-width: $xs) {
+
+	.order {
+		padding: 40px 0px 20px 0px;
+
+	}
+
+	.item {
+		width: 100%;
+		text-align: center;
+
+		&__text {
+			max-width: 100%;
+		}
+	}
+}

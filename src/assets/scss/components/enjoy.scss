@@ -1,0 +1,176 @@
+@import "../utils/parameters";
+
+//Enjoy
+
+.enjoy {
+	padding: 100px 0px;
+
+	&__body {
+		max-width: 550px;
+		margin: 0px auto;
+		text-align: center;
+	}
+
+	&__image {
+		margin: 0px 0px 30px 0px;
+	}
+
+	&__title {
+		color: $c-text;
+		font-weight: 900;
+		font-size: 5rem;
+		line-height: 120%;
+		margin: 0px 0px 20px 0px;
+	}
+
+	&__form {
+		display: flex;
+		align-items: center;
+		margin: 0px 0px 20px 0px;
+	}
+
+	&__input {
+		flex: 1 1 auto;
+
+		.input {
+			text-align: center;
+			width: 100%;
+			height: 55px;
+			background-color: #f0f0f2;
+			border: 1px solid #f0f0f2;
+			border-radius: 6px;
+			color: rgba(0, 0, 0, 0.35);
+			font-weight: bold;
+			font-size: 1.8rem;
+			line-height: 120%;
+			&.focus {
+				color: #000;
+			}
+			&.err {
+				border: 1px solid red;
+			}
+		}
+	}
+
+	&__button {
+		flex: 0 0 156px;
+		margin: 0px 0px 0px 20px;
+	}
+
+	&__btn {
+		width: 156px;
+		height: 55px;
+		display: inline-block;
+		background-color: $c-primary;
+		border: 1px solid $c-primary;
+		border-radius: 1.4rem;
+		color: $c-text;
+		font-weight: 700;
+		font-size: 1.8rem;
+		line-height: 120%;
+
+		&:hover {
+			background-color: #fff;
+			transition: all 0.3s ease 0s;
+		}
+	}
+
+	&__links {
+		text-align: left;
+	}
+
+	&__link {
+		text-align: left;
+		display: inline-block;
+		background-color: #240c39;
+		padding: 15px 30px;
+		border-radius: 10px;
+		margin: 0px 0px 0px 24px;
+
+		&:first-child {
+			margin: 0;
+		}
+
+		&:hover {
+			background-color: #3d1064;
+			transition: all 0.3s ease 0s;
+		}
+	}
+}
+
+//Media
+
+@media (max-width: $sm) {
+	.enjoy {
+		&__title {
+			font-size: 4.5rem;
+			margin: 0px 0px 20px 0px;
+		}
+
+		.input {
+			height: 45px;
+			font-size: 1.6rem;
+		}
+
+		&__btn {
+			width: 115px;
+			height: 45px;
+			font-size: 1.6rem;
+			border-radius: 1rem;
+		}
+
+		&__button {
+			margin: 0px 0px 0px 5px;
+		}
+	}
+}
+
+@media (max-width: $xs) {
+	.enjoy {
+		&__image {
+			margin: 0px 0px 15px 0px;
+		}
+
+		&__title {
+			font-size: 4rem;
+			margin: 0px 0px 20px 0px;
+		}
+
+		&__form {
+			display: block;
+		}
+
+		.input {
+			margin: 0px 0px 30px 0px;
+		}
+
+		&__links {
+			display: flex;
+			flex-direction: column;
+		}
+
+		&__button {
+			margin: 0px 0px 30px 0px;
+		}
+
+		&__link {
+			max-width: 180px;
+			background-color: #240c39;
+			padding: 15px 30px;
+			border-radius: 10px;
+			margin: 0px 0px 0px 24px;
+
+			&:first-child {
+				margin: 0px 0px 20px 0px;
+			}
+
+			&:last-child {
+				margin: 0;
+			}
+
+			&__title {
+				font-size: 3.5rem;
+			}
+		}
+	}
+}

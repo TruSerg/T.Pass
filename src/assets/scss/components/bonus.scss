@@ -1,0 +1,151 @@
+@import "../utils/parameters";
+
+//Bonus
+
+.bonus {
+	background-color: $c-secondary;
+	min-height: 527px;
+
+	&__column {
+		width: 45%;
+	}
+
+	&__item {
+		max-width: 455px;
+		background: #fff;
+		box-shadow: 0px 8px 32px rgba(15, 35, 54, 0.6);
+		border-radius: 8px;
+		padding: 38px 38px 43px 38px;
+		display: flex;
+
+		&:first-child {
+			position: relative;
+			top: -30px;
+		}
+
+		&:nth-child(2) {
+			position: relative;
+			left: 35px;
+		}
+
+		&:last-child {
+			position: relative;
+			bottom: -30px;
+		}
+	}
+
+	&__img {
+		display: flex;
+		flex-direction: column;
+		align-self: flex-start;
+	}
+
+	&__content {
+		max-width: 445px;
+		margin: 0px 0px 0px 36.5px;
+	}
+
+	&__title {
+		margin: 0px 0px 25px 0px;
+		letter-spacing: 0.2px;
+		font-size: 2.5rem;
+		line-height: 100%;
+		color: $c-text;
+	}
+
+	&__text {
+		color: $c-text2;
+		font-weight: 400;
+		font-size: 1.6rem;
+		line-height: 150%;
+	}
+
+	&__image {
+		width: 55%;
+		img {
+			position: absolute;
+			right: 20px;
+			bottom: 0;
+			display: block;
+			height: auto;
+			max-width: 45vw;
+		}
+	}
+}
+
+.container {
+	position: relative;
+}
+
+//Media
+
+@media (max-width: $md) {
+	.bonus {
+		&__item {
+			padding: 18px 18px 18px 38px;
+			max-width: 700px;
+			margin: 0px auto;
+
+			&:first-child {
+				position: static;
+				margin-bottom: 30px;
+			}
+
+			&:nth-child(2) {
+				position: static;
+				margin-bottom: 30px;
+			}
+
+			&:last-child {
+				position: static;
+			}
+		}
+
+		&__title {
+			margin: 0px 0px 10px 0px;
+		}
+
+		&__body {
+			max-width: 100%;
+		}
+		&__column {
+			width: 100%;
+			margin: -30px 0px 50px 0px;
+		}
+
+		&__image {
+			max-width: 100%;
+			margin: 0px auto;
+			img {
+				position: static;
+				display: block;
+				height: auto;
+				max-width: 100%;
+			}
+		}
+	}
+}
+
+@media (max-width: $xs) {
+	.bonus {
+		&__item {
+			padding: 18px 18px 18px 18px;
+		}
+
+		&__column {
+			margin-bottom: 30px;
+		}
+
+		&__content {
+			margin: 0px 0px 0px 15px;
+		}
+
+		&__title {
+			font-size: 2rem;
+		}
+
+		&__text {
+			font-size: 1.5rem;
+		}
+	}
+}

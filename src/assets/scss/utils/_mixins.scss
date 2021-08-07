@@ -1,0 +1,8 @@
+// пример миксина
+@mixin title() {
+    color: red;
+    font-size: 36px;
+    line-height: 42px;
+    margin: 0 0 1rem;
+}
+  
