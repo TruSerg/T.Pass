@@ -4,10 +4,12 @@
 
 .intro {
 	background-color: $c-secondary;
+	overflow: hidden;
 
 	&__content {
 		min-height: 720px;
 		padding: 200px 0px 20px 0px;
+		
 	}
 
 	&__title {

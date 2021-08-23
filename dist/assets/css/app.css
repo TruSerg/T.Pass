@@ -333,7 +333,7 @@ button {
     position: absolute;
     left: 50%;
     width: 0;
-    height: 3px;
+    height: 2px;
     background-color: #0F2336;
     bottom: -10px; }
   .menu-header__link:hover:after {
@@ -391,7 +391,8 @@ button {
       width: 0; } }
 
 .intro {
-  background-color: #F4F5F6; }
+  background-color: #F4F5F6;
+  overflow: hidden; }
   .intro__content {
     min-height: 720px;
     padding: 200px 0px 20px 0px; }
@@ -904,8 +905,6 @@ button {
       line-height: 120%; }
       .enjoy__input .input.focus {
         color: #000; }
-      .enjoy__input .input.err {
-        border: 1px solid red; }
   .enjoy__button {
     flex: 0 0 156px;
     margin: 0px 0px 0px 20px; }
@@ -926,10 +925,11 @@ button {
   .enjoy__links {
     text-align: left; }
   .enjoy__link {
-    text-align: left;
+    text-align: center;
     display: inline-block;
     background-color: #240c39;
-    padding: 15px 30px;
+    padding: 15px 10px;
+    min-width: 185px;
     border-radius: 10px;
     margin: 0px 0px 0px 24px; }
     .enjoy__link:first-child {
@@ -970,9 +970,6 @@ button {
     margin: 0px 0px 30px 0px; }
   .enjoy__link {
     max-width: 180px;
-    background-color: #240c39;
-    padding: 15px 30px;
-    border-radius: 10px;
     margin: 0px 0px 0px 24px; }
     .enjoy__link:first-child {
       margin: 0px 0px 20px 0px; }
